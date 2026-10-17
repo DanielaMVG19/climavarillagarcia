@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Estilos del mapa -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+>
+
+<!-- Herramientas del mapa -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<style>
+  #map {
+    width: 100%;
+    height: 350px;
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  #map .leaflet-popup-content {
+    color: #222;
+  }
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buscador Geográfico de Daniela Varilla</title>
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+<h1>🌍 Localizador Geográfico Global🌍 by Daniela Varilla</h1>
+<p>Consumo de API OpenStreetMap con control de versiones integral. Por Daniela Marlen Varilla Garcia</p>
+</header>
+<main>
+<div class="search-container">
+<input type="text" id="city-input" placeholder="Introduce un lugar (ej.
+Monterrey, Madrid)...">
+<button id="search-btn">Consultar API</button>
+</div>
+<div id="weather-card" class="weather-card">
+<p>Introduce una ubicación para desplegar las coordenadas y descripción
+geográfica. </p>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
